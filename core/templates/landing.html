@@ -1,0 +1,105 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Credit Approval System</title>
+    <link rel="icon" href="{% static 'image.png' %}">
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f9fafb;
+            margin: 0;
+            padding: 0;
+            color: #1f2937;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 20px 20px;
+            font-size: 36px;
+            font-weight: 700;
+            color: #111827;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 40px 20px;
+            gap: 40px;
+        }
+
+        .logo {
+            width: 150px;
+            height: auto;
+            border-radius: 16px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .description {
+            max-width: 500px;
+            font-size: 18px;
+            line-height: 1.6;
+            color: #4b5563;
+            text-align: justify;
+        }
+
+        .buttons {
+            text-align: center;
+            margin: 50px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            margin: 12px;
+            padding: 14px 28px;
+            background-color: #2563eb;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 17px;
+            font-weight: 500;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .btn:hover {
+            background-color: #45d81d;
+            transform: scale(1.03);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .description {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>Hello Evaluator 👋</header>
+
+<div class="container">
+    <img src="{% static 'image.png' %}" alt="Logo" class="logo">
+    <div class="description">
+        <p>
+            I am  <strong>Sai Mahendra Bejawada</strong> and developed this
+            Credit Approval System.<br>In this platform provides backend endpoints for evaluating and managing customer credit data
+            using Django and PostgreSQL.
+        </p>
+    </div>
+</div>
+
+<div class="buttons">
+    <a href="/swagger/" class="btn">Swagger Docs</a>
+    <a href="/redoc/" class="btn">ReDoc UI</a>
+</div>
+
+</body>
+</html>
