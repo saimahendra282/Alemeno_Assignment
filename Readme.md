@@ -118,6 +118,8 @@ Alemeno_Assignment/
 
 Anyway here is the demo video, here you can see every working api endpoint
 
+https://github.com/user-attachments/assets/d828bfe0-6512-44b6-9986-b207f22de3a5
+
 <h2>API Endpoints (Base URL: http://localhost:8000/api/)</h2>
 1. Register Customer
 
