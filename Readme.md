@@ -40,7 +40,8 @@ cd Alemeno_Assignment
 
 ```
 python -m venv venv
-source venv/bin/activate       # Windows: venv\Scripts\activate
+source venv/bin/activate
+# Windows: cd venv\Scripts\activate
 ```
 
 3. Install requirements
@@ -48,12 +49,12 @@ source venv/bin/activate       # Windows: venv\Scripts\activate
 ```
 pip install -r requirements.txt
 ```
-4. Create .env file in root within:
+4. rename  .env.sample file in root within:
 ```
-SECRET_KEY=your-secret-key
-DEBUG=True
-ALLOWED_HOSTS=localhost,127.0.0.1
-DATABASE_URL=your_postgresql_url   # From Clever Cloud/NeonDB
+SECRET_KEY=shhh_it_is_secret
+DJANGO_DEBUG=True
+# DJANGO_ALLOWED_HOSTS=localhost,127.0.0.1
+SAI_DB=postgres://username:password@localhost:port_num/db_name
 ```
 5.Apply Migrations
 ```
